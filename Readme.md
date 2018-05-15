@@ -189,7 +189,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam',metrics=["accura
     C:\Users\ashish.patel\Anaconda3\lib\site-packages\ipykernel_launcher.py:38: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(120, (5, 5))`
     
 
-# 6.View Model Confifuration
+# 6.View Model Configuration
 
 
 ```python
