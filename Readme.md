@@ -1,4 +1,13 @@
 
+
+![snap](snap.jpg)
+
+**Dataset : https://zenodo.org/record/3451524#.X2bg0GgzZPY**
+
+#### Notebook
+
+---
+
 # 1. Import All Required Packages
 
 
@@ -74,8 +83,9 @@ img_data.shape
     Loaded the images of dataset-SAD
     
     Loaded the images of dataset-SURPRISE
-    
-    
+
+
+​    
 
 
 
@@ -187,7 +197,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam',metrics=["accura
     C:\Users\ashish.patel\Anaconda3\lib\site-packages\ipykernel_launcher.py:30: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(6, (5, 5), input_shape=(128, 128,..., padding="same")`
     C:\Users\ashish.patel\Anaconda3\lib\site-packages\ipykernel_launcher.py:34: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(16, (5, 5), padding="same")`
     C:\Users\ashish.patel\Anaconda3\lib\site-packages\ipykernel_launcher.py:38: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(120, (5, 5))`
-    
+
 
 # 6.View Model Configuration
 
@@ -240,7 +250,7 @@ model.layers[0].trainable
     Trainable params: 7,954,391
     Non-trainable params: 0
     _________________________________________________________________
-    
+
 
 
 
@@ -271,7 +281,7 @@ hist = model.fit(X_train, y_train, batch_size=7, nb_epoch=30, verbose=1, validat
 
     C:\Users\ashish.patel\Anaconda3\lib\site-packages\keras\models.py:942: UserWarning: The `nb_epoch` argument in `fit` has been renamed `epochs`.
       warnings.warn('The `nb_epoch` argument in `fit` '
-    
+
 
     Train on 181 samples, validate on 32 samples
     Epoch 1/30
@@ -334,7 +344,7 @@ hist = model.fit(X_train, y_train, batch_size=7, nb_epoch=30, verbose=1, validat
     181/181 [==============================] - 6s 34ms/step - loss: 0.1058 - acc: 0.9337 - val_loss: 0.5347 - val_acc: 0.9063
     Epoch 30/30
     181/181 [==============================] - 6s 36ms/step - loss: 0.1807 - acc: 0.9227 - val_loss: 0.4655 - val_acc: 0.9063
-    
+
 
 
 ```python
@@ -422,7 +432,7 @@ plt.show()
       1.5250735e-05 4.4816770e-06]]
     [4]
     [[0. 0. 0. 0. 1. 0. 0.]]
-    
+
 
 
 ![png](output_17_1.png)
@@ -470,7 +480,7 @@ plt.xlabel('prediction = %s' % getLabel(results[0]), fontsize=25)
 
     test image original shaape (128, 128, 3)
     image original shaape (128, 128, 3)
-    
+
 
 
 
